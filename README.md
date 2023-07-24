@@ -10,10 +10,10 @@ To handle data preparation, Google's Colaboratory was utilized, and the data was
 
 For the model architecture, the Hugging Face Transformers library was utilized to import the pre-trained BERT-based-uncased model. The classifier head was added on top of BERT, consisting of a dense layer with a ReLU activation function, followed by a dropout layer to prevent overfitting. Finally, a dense layer with a sigmoid activation function was used as the output layer to predict the binary classification of questions as sincere or insincere.
 
-## Training and Evaluation
+## Results
 
-The model was trained using the created input pipeline and evaluated on the validation samples. To monitor training progress, callbacks like `EpochDots`, `EarlyStopping`, and `Tensorboard` were implemented. The TensorBoard library was also employed to log model information and the TensorFlow docs.plots `HistorPlotter` was used to visualize accuracy and loss during training. 
+The fine-tuned BERT model was evaluated and predictions were generated on the validation set.
 
 ## Conclusion
 
-This project demonstrates how fine-tuning BERT models can effectively classify questions as sincere or insincere. By employing TensorFlow Hub and Hugging Face Transformers, you effectively handled data preparation, created a powerful input pipeline, and built a robust model architecture. Your utilization of the limited GPU resources in Google's Colaboratory showcases your ability to optimize performance within constrained environments. Overall, your project showcases your expertise in natural language processing and deep learning, making it a valuable addition to your data science portfolio.
+This project demonstrates how fine-tuning BERT models can effectively classify questions as sincere or insincere. By employing TensorFlow Hub and Hugging Face Transformers, we effectively handled data preparation, created a powerful input pipeline, and built a robust model architecture. We can utilize the limited GPU resources in Google's Colaboratory to optimize performance within constrained environments.
